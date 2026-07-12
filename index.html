@@ -1,0 +1,1452 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <base target="_self" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CubMart</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="icon" type="image/x-icon" href="./logo(1).png" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-cub sticky-top py-2">
+      <div class="container">
+        <a
+          class="navbar-brand brand-logo d-flex align-items-center"
+          href="#hero">
+          <i class="fas fa-cube"></i> CubMart
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#headerNav"
+          aria-controls="headerNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="headerNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#hero">
+                <i class="fas fa-house me-1"></i> Home
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown">
+                <i class="fas fa-store me-1"></i> Shop
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#cat-electronics">
+                    Electronics
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#cat-fashion"
+                    >Fashion & Apparel</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#cat-home">Home & Living</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#spotlight">
+                <i class="fas fa-star me-1"></i> Spotlight
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reviews">
+                <i class="fas fa-comments me-1"></i> Reviews
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">
+                <i class="fas fa-envelope me-1"></i> Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 fade-in-up delay-1">
+            <div class="hero-badge">
+              <i class="fas fa-rocket"></i> New Season, Fresh Deals
+            </div>
+            <h1 class="hero-title mb-3">
+              Shop Smarter,<br />Live Better with CubMart
+            </h1>
+            <p class="hero-subtitle mb-4">
+              Discover premium electronics, trending fashion, and modern home
+              essentials — all at prices that make you smile. Free shipping on
+              your first order!
+            </p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="#featured-products" class="hero-cta">
+                Shop Now <i class="fas fa-arrow-right"></i>
+              </a>
+              <a href="#why-shop" class="hero-cta learnMore">
+                Learn More <i class="fas fa-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 fade-in-up delay-3">
+            <div class="hero-image-wrapper">
+              <img
+                src="./logo.png"
+                alt="CubMart featured products showcase"
+                class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-cub-light" id="why-shop">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <h2 class="section-title section-title-center">Why Shop With Us?</h2>
+          <p class="section-subtitle mt-3">
+            We go the extra mile to make your shopping experience unforgettable.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6 col-sm-6 fade-in-up delay-1">
+            <div class="why-card">
+              <div class="why-icon"><i class="fas fa-truck-fast"></i></div>
+              <h5>Free Shipping</h5>
+              <p>
+                Free shipping on all orders over $50. Fast and reliable delivery
+                to your doorstep.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 fade-in-up delay-2">
+            <div class="why-card">
+              <div class="why-icon"><i class="fas fa-shield-halved"></i></div>
+              <h5>Secure Payments</h5>
+              <p>
+                Your payment information is always encrypted and protected with
+                top-tier security.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 fade-in-up delay-3">
+            <div class="why-card">
+              <div class="why-icon"><i class="fas fa-rotate-left"></i></div>
+              <h5>Easy Returns</h5>
+              <p>
+                Not satisfied? Return any item within 30 days for a full refund.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 fade-in-up delay-4">
+            <div class="why-card">
+              <div class="why-icon"><i class="fas fa-headset"></i></div>
+              <h5>24/7 Support</h5>
+              <p>
+                Our friendly support team is available around the clock to
+                assist you with anything.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5" id="featured-products">
+      <div class="category-section mb-5 container px-3" id="cat-electronics">
+        <div class="text-center mb-5">
+          <span class="badge bg-success px-3 py-2 fs-6 mb-3">
+            <i class="fas fa-laptop me-2"></i>Electronics
+          </span>
+
+          <h3 class="fw-bold mb-2">Latest Electronics</h3>
+
+          <p class="text-muted mx-auto" style="max-width: 600px">
+            Discover premium gadgets and smart devices designed to simplify your
+            everyday life.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4 col-sm-6">
+            <div class="product-card card">
+              <div class="img-wrapper">
+                <img
+                  src="https://www.inspireuplift.com/resizer/?image=https%3A%2F%2Fcdn.inspireuplift.com%2Fuploads%2Fimages%2Fseller_products%2F20323%2Fiu_1753081640_1.jpg&width=3840&quality=75&format=auto&fit=cover"
+                  class="card-img-top"
+                  style="height: 450px; object-fit: cover"
+                  alt="Wireless Headphones Pro" />
+              </div>
+
+              <div class="card-body">
+                <h6 class="card-title">Wireless Headphones Pro</h6>
+                <p class="card-text">
+                  Active noise cancellation with up to 30 hours of battery life.
+                </p>
+
+                <div class="product-price">
+                  $149.99
+                  <span class="old-price">$199.99</span>
+                </div>
+
+                <button class="add-to-cart w-100" type="button" data-id="1">
+                  <i class="fas fa-cart-plus me-1"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="product-card card">
+              <div class="img-wrapper">
+                <img
+                  src="https://m.media-amazon.com/images/I/71uFhrrUeVL._AC_UF350,350_QL80_.jpg"
+                  class="card-img-top"
+                  style="height: 450px; object-fit: cover"
+                  alt="Smart Watch Ultra" />
+              </div>
+
+              <div class="card-body">
+                <h6 class="card-title">Smart Watch Ultra</h6>
+                <p class="card-text">
+                  AMOLED display with advanced fitness and health tracking.
+                </p>
+
+                <div class="product-price">
+                  $249.99
+                  <span class="old-price">$299.99</span>
+                </div>
+                <button class="add-to-cart w-100" type="button" data-id="2">
+                  <i class="fas fa-cart-plus me-1"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="product-card card">
+              <div class="img-wrapper">
+                <img
+                  src="https://dukandwar.com/wp-content/uploads/2020/03/JBL-Flip-3-Stealth-Waterproof-Portable-Bluetooth-Speaker-with-Rich-Deep-Bass-Black-With-Mic_3.jpg"
+                  class="card-img-top"
+                  style="height: 450px; object-fit: cover"
+                  alt="Bluetooth Speaker" />
+              </div>
+
+              <div class="card-body">
+                <h6 class="card-title">Bluetooth Speaker</h6>
+                <p class="card-text">
+                  Rich stereo sound with waterproof portable design.
+                </p>
+
+                <div class="product-price">
+                  $79.99
+                  <span class="old-price">$99.99</span>
+                </div>
+                <button class="add-to-cart w-100" type="button" data-id="3">
+                  <i class="fas fa-cart-plus me-1"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="product-card card">
+              <div class="img-wrapper">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpB_ZCtee8bnK2I1r5mbp1Kx0SpPwIu5kPa_ACtSYpD4hK17pCvN8GGouG&s=10"
+                  class="card-img-top"
+                  style="height: 450px; object-fit: cover"
+                  alt="Wireless AirPods Pro" />
+              </div>
+
+              <div class="card-body">
+                <h6 class="card-title">Wireless AirPods Pro</h6>
+                <p class="card-text">
+                  Crystal-clear calls with immersive audio and long battery
+                  life.
+                </p>
+
+                <div class="product-price">
+                  $49.99
+                  <span class="old-price">$69.99</span>
+                </div>
+                <button class="add-to-cart w-100" type="button" data-id="4">
+                  <i class="fas fa-cart-plus me-1"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="product-card card">
+              <div class="img-wrapper">
+                <img
+                  src="https://icdn.tradew.com/file/202308/1575939/png/8013663.png?x-oss-process=image/resize,w_500/quality,Q_90"
+                  class="card-img-top"
+                  style="height: 450px; object-fit: cover"
+                  alt="Power Bank" />
+              </div>
+
+              <div class="card-body">
+                <h6 class="card-title">Fast Charging Power Bank</h6>
+                <p class="card-text">
+                  High-capacity portable charger with dual USB outputs.
+                </p>
+
+                <div class="product-price">
+                  $29.99
+                  <span class="old-price">$44.99</span>
+                </div>
+                <button class="add-to-cart w-100" type="button" data-id="5">
+                  <i class="fas fa-cart-plus me-1"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="product-card card">
+              <div class="img-wrapper">
+                <img
+                  src="https://naztech.com/cdn/shop/products/15598_NZT_Thumb_004.jpg?v=1647377101"
+                  class="card-img-top"
+                  style="height: 450px; object-fit: cover"
+                  alt="USB-C Hub" />
+              </div>
+
+              <div class="card-body">
+                <h6 class="card-title">USB-C Multiport Hub</h6>
+                <p class="card-text">
+                  Expand your laptop with HDMI, USB, SD card and more.
+                </p>
+
+                <div class="product-price">
+                  $39.99
+                  <span class="old-price">$87.99</span>
+                </div>
+                <button class="add-to-cart w-100" type="button" data-id="6">
+                  <i class="fas fa-cart-plus me-1"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="product-card card">
+              <div class="img-wrapper">
+                <img
+                  src="https://i.ebayimg.com/images/g/9NsAAeSwx0Vpuhw2/s-l400.jpg"
+                  class="card-img-top"
+                  style="height: 450px; object-fit: cover"
+                  alt="LED Desk Lamp" />
+              </div>
+
+              <div class="card-body">
+                <h6 class="card-title">Smart LED Desk Lamp</h6>
+                <p class="card-text">
+                  Adjustable brightness with eye-care lighting technology.
+                </p>
+
+                <div class="product-price">
+                  $14.99
+                  <span class="old-price">$19.99</span>
+                </div>
+                <button class="add-to-cart w-100" type="button" data-id="7">
+                  <i class="fas fa-cart-plus me-1"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="product-card card">
+              <div class="img-wrapper">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG3-CVrvY2dBWoij9aJ_bkmCPgj619E0NDdhOQ2l2t4KJzKC-y6ZdM_v4&s=10"
+                  class="card-img-top"
+                  style="height: 450px; object-fit: cover"
+                  alt="4K Webcam" />
+              </div>
+
+              <div class="card-body">
+                <h6 class="card-title">4K HD Webcam</h6>
+                <p class="card-text">
+                  Professional-quality video for meetings and streaming.
+                </p>
+
+                <div class="product-price">
+                  $49.99
+                  <span class="old-price">$69.99</span>
+                </div>
+                <button class="add-to-cart w-100" type="button" data-id="8">
+                  <i class="fas fa-cart-plus me-1"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="product-card card">
+              <div class="img-wrapper">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1T36psWoIl94Cuz1k8APMDdLm8CQ4LmZ5kmwfuo2worLRe2010FAtQsdQ&s=10"
+                  class="card-img-top"
+                  style="height: 450px; object-fit: cover"
+                  alt="VR Headset" />
+              </div>
+
+              <div class="card-body">
+                <h6 class="card-title">Immersive VR Headset</h6>
+                <p class="card-text">
+                  Experience next-generation virtual reality entertainment.
+                </p>
+
+                <div class="product-price">
+                  $49.99
+                  <span class="old-price">$69.99</span>
+                </div>
+                <button class="add-to-cart w-100" type="button" data-id="9">
+                  <i class="fas fa-cart-plus me-1"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="category-section mb-5 container px-3" id="cat-fashion">
+        <div class="text-center mb-5">
+          <span class="badge bg-success px-3 py-2 fs-6 mb-3">
+            <i class="fas fa-shirt me-2"></i>Fashion & Apparel
+          </span>
+
+          <h3 class="fw-bold mb-2">Fashion & Apparel</h3>
+
+          <p class="text-muted mx-auto" style="max-width: 600px">
+            Refresh your wardrobe with premium clothing, footwear, and
+            accessories designed for every occasion.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4 col-sm-6">
+            <div class="product-card card">
+              <div class="img-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1542272604-787c3835535d?w=700&auto=format&fit=crop"
+                  class="card-img-top"
+                  style="height: 450px; object-fit: cover"
+                  alt="Premium Denim Trucker Jacket" />
+              </div>
+
+              <div class="card-body">
+                <h6 class="card-title">Premium Denim Trucker Jacket</h6>
+                <p class="card-text">
+                  Vintage-wash denim with a modern tailored fit.
+                </p>
+
+                <div class="product-price">
+                  $89.99
+                  <span class="old-price">$129.99</span>
+                </div>
+                <button class="add-to-cart w-100" type="button" data-id="10">
+                  <i class="fas fa-cart-plus me-1"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="product-card card">
+              <div class="img-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=700&auto=format&fit=crop"
+                  class="card-img-top"
+                  style="height: 450px; object-fit: cover"
+                  alt="Luxe Leather Crossbody Bag" />
+              </div>
+
+              <div class="card-body">
+                <h6 class="card-title">Luxe Leather Crossbody Bag</h6>
+                <p class="card-text">
+                  Premium full-grain leather with adjustable shoulder strap.
+                </p>
+
+                <div class="product-price">
+                  $64.99
+                  <span class="old-price">$89.99</span>
+                </div>
+                <button class="add-to-cart w-100" type="button" data-id="11">
+                  <i class="fas fa-cart-plus me-1"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="product-card card">
+              <div class="img-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=700&auto=format&fit=crop"
+                  class="card-img-top"
+                  style="height: 450px; object-fit: cover"
+                  alt="AirFlex Running Sneakers" />
+              </div>
+
+              <div class="card-body">
+                <h6 class="card-title">AirFlex Running Sneakers</h6>
+                <p class="card-text">
+                  Ultra-light cushioning engineered for all-day comfort.
+                </p>
+
+                <div class="product-price">
+                  $119.99
+                  <span class="old-price">$159.99</span>
+                </div>
+                <button class="add-to-cart w-100" type="button" data-id="12">
+                  <i class="fas fa-cart-plus me-1"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="product-card card">
+              <div class="img-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1624222247344-550fb60583dc?w=700&auto=format&fit=crop"
+                  class="card-img-top"
+                  style="height: 450px; object-fit: cover"
+                  alt="Signature Leather Belt" />
+              </div>
+
+              <div class="card-body">
+                <h6 class="card-title">Signature Leather Belt</h6>
+                <p class="card-text">
+                  Handcrafted genuine leather with polished metal buckle.
+                </p>
+
+                <div class="product-price">
+                  $39.99
+                  <span class="old-price">$54.99</span>
+                </div>
+                <button class="add-to-cart w-100" type="button" data-id="13">
+                  <i class="fas fa-cart-plus me-1"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="product-card card">
+              <div class="img-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=700&auto=format&fit=crop"
+                  class="card-img-top"
+                  style="height: 450px; object-fit: cover"
+                  alt="Essential Cotton Tee" />
+              </div>
+
+              <div class="card-body">
+                <h6 class="card-title">Essential Cotton Tee (3-Pack)</h6>
+                <p class="card-text">
+                  Breathable premium cotton designed for everyday wear.
+                </p>
+
+                <div class="product-price">
+                  $29.99
+                  <span class="old-price">$44.99</span>
+                </div>
+                <button class="add-to-cart w-100" type="button" data-id="14">
+                  <i class="fas fa-cart-plus me-1"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="product-card card">
+              <div class="img-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=700&auto=format&fit=crop"
+                  class="card-img-top"
+                  style="height: 450px; object-fit: cover"
+                  alt="Polarized Aviator Sunglasses" />
+              </div>
+
+              <div class="card-body">
+                <h6 class="card-title">Polarized Aviator Sunglasses</h6>
+                <p class="card-text">
+                  Scratch-resistant polarized lenses with UV400 protection.
+                </p>
+
+                <div class="product-price">
+                  $54.99
+                  <span class="old-price">$79.99</span>
+                </div>
+                <button class="add-to-cart w-100" type="button" data-id="15">
+                  <i class="fas fa-cart-plus me-1"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="product-card card">
+              <div class="img-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1520903920243-00d872a2d1c9?w=700&auto=format&fit=crop"
+                  class="card-img-top"
+                  style="height: 450px; object-fit: cover"
+                  alt="Luxury Cashmere Scarf" />
+              </div>
+
+              <div class="card-body">
+                <h6 class="card-title">Luxury Cashmere Scarf</h6>
+                <p class="card-text">
+                  Soft cashmere blend offering warmth with timeless style.
+                </p>
+
+                <div class="product-price">
+                  $74.99
+                  <span class="old-price">$99.99</span>
+                </div>
+                <button class="add-to-cart w-100" type="button" data-id="16">
+                  <i class="fas fa-cart-plus me-1"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="product-card card">
+              <div class="img-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1627123424574-724758594e93?w=700&auto=format&fit=crop"
+                  class="card-img-top"
+                  style="height: 450px; object-fit: cover"
+                  alt="Executive Leather Wallet" />
+              </div>
+
+              <div class="card-body">
+                <h6 class="card-title">Executive Leather Wallet</h6>
+                <p class="card-text">
+                  Slim RFID-protected wallet crafted from genuine leather.
+                </p>
+
+                <div class="product-price">
+                  $34.99
+                  <span class="old-price">$49.99</span>
+                </div>
+                <button class="add-to-cart w-100" type="button" data-id="17">
+                  <i class="fas fa-cart-plus me-1"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="product-card card">
+              <div class="img-wrapper">
+                <img
+                  src="https://www.blundstone.com/cdn/shop/files/product-image_v2_550-USA_l_lifestyle_men_slider_1.jpg?v=1775081355&width=700"
+                  class="card-img-top"
+                  style="height: 450px; object-fit: cover"
+                  alt="Heritage Chelsea Boots" />
+              </div>
+
+              <div class="card-body">
+                <h6 class="card-title">Heritage Chelsea Boots</h6>
+                <p class="card-text">
+                  Premium leather boots with waterproof finish and cushioned
+                  sole.
+                </p>
+
+                <div class="product-price">
+                  $149.99
+                  <span class="old-price">$199.99</span>
+                </div>
+                <button class="add-to-cart w-100" type="button" data-id="18">
+                  <i class="fas fa-cart-plus me-1"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="category-section mb-5 container px-3" id="cat-home">
+        <div class="text-center mb-5">
+          <span class="badge bg-success px-3 py-2 fs-6 mb-3">
+            <i class="fas fa-couch me-2"></i>Home & Living
+          </span>
+
+          <h3 class="fw-bold mb-2">Home & Living</h3>
+
+          <p class="text-muted mx-auto" style="max-width: 600px">
+            Transform your home with elegant furniture, décor, and everyday
+            essentials designed for modern living.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4 col-sm-6">
+            <div class="product-card card">
+              <div class="img-wrapper">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwkhHf_1OtYNnGitfDO4rTpZU3C7GpxSwlA4OcJZFCB_w6tW0EeN3q8k_T&s=10"
+                  class="card-img-top"
+                  style="height: 450px; object-fit: cover"
+                  alt="Scandinavian Ceramic Vase Collection" />
+              </div>
+
+              <div class="card-body">
+                <h6 class="card-title">Scandinavian Ceramic Vase Collection</h6>
+                <p class="card-text">
+                  Handcrafted matte ceramic vases perfect for modern interiors.
+                </p>
+
+                <div class="product-price">
+                  $59.99
+                  <span class="old-price">$79.99</span>
+                </div>
+                <button class="add-to-cart w-100" type="button" data-id="19">
+                  <i class="fas fa-cart-plus me-1"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="product-card card">
+              <div class="img-wrapper">
+                <img
+                  src="https://m.media-amazon.com/images/I/51+lGrYOJ2L._AC_UF894,1000_QL80_.jpg"
+                  class="card-img-top"
+                  style="height: 450px; object-fit: cover"
+                  alt="Nordic LED Floor Lamp" />
+              </div>
+
+              <div class="card-body">
+                <h6 class="card-title">Nordic LED Floor Lamp</h6>
+                <p class="card-text">
+                  Energy-efficient dimmable lighting with elegant minimalist
+                  styling.
+                </p>
+
+                <div class="product-price">
+                  $89.99
+                  <span class="old-price">$119.99</span>
+                </div>
+                <button class="add-to-cart w-100" type="button" data-id="20">
+                  <i class="fas fa-cart-plus me-1"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="product-card card">
+              <div class="img-wrapper">
+                <img
+                  src="https://m.media-amazon.com/images/I/81XjLqwxvXL._AC_UF894,1000_QL80_.jpg"
+                  class="card-img-top"
+                  style="height: 450px; object-fit: cover"
+                  alt="Designer Accent Pillow Set" />
+              </div>
+
+              <div class="card-body">
+                <h6 class="card-title">Designer Accent Pillow Set</h6>
+                <p class="card-text">
+                  Soft woven cotton cushions with contemporary textures.
+                </p>
+
+                <div class="product-price">
+                  $44.99
+                  <span class="old-price">$59.99</span>
+                </div>
+                <button class="add-to-cart w-100" type="button" data-id="21">
+                  <i class="fas fa-cart-plus me-1"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="product-card card">
+              <div class="img-wrapper">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtdF9Kk1MY3QZFwxTs1t3OQVC-xyo0MO0yHi3wmdLSkK-rdjorZnOgU8E&s=10"
+                  class="card-img-top"
+                  style="height: 450px; object-fit: cover"
+                  alt="Professional Chef Knife Set" />
+              </div>
+
+              <div class="card-body">
+                <h6 class="card-title">Professional Chef Knife Set</h6>
+                <p class="card-text">
+                  Precision-forged stainless steel blades with ergonomic
+                  handles.
+                </p>
+
+                <div class="product-price">
+                  $79.99
+                  <span class="old-price">$109.99</span>
+                </div>
+                <button class="add-to-cart w-100" type="button" data-id="22">
+                  <i class="fas fa-cart-plus me-1"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="product-card card">
+              <div class="img-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1545454675-3531b543be5d?w=700&auto=format&fit=crop"
+                  class="card-img-top"
+                  style="height: 450px; object-fit: cover"
+                  alt="Smart Bluetooth Speaker" />
+              </div>
+
+              <div class="card-body">
+                <h6 class="card-title">Smart Bluetooth Speaker</h6>
+                <p class="card-text">
+                  Rich 360° audio with seamless wireless streaming.
+                </p>
+
+                <div class="product-price">
+                  $69.99
+                  <span class="old-price">$89.99</span>
+                </div>
+                <button class="add-to-cart w-100" type="button" data-id="23">
+                  <i class="fas fa-cart-plus me-1"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="product-card card">
+              <div class="img-wrapper">
+                <img
+                  src="https://www.furnitureinfashion.net/cache/594x594-quinton-glass-top-wooden-coffee-table-rustic-oak-led.jpg"
+                  class="card-img-top"
+                  style="height: 450px; object-fit: cover"
+                  alt="Oak Wood Coffee Table" />
+              </div>
+
+              <div class="card-body">
+                <h6 class="card-title">Oak Wood Coffee Table</h6>
+                <p class="card-text">
+                  Solid oak craftsmanship with timeless Scandinavian design.
+                </p>
+
+                <div class="product-price">
+                  $249.99
+                  <span class="old-price">$329.99</span>
+                </div>
+                <button class="add-to-cart w-100" type="button" data-id="24">
+                  <i class="fas fa-cart-plus me-1"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="product-card card">
+              <div class="img-wrapper">
+                <img
+                  src="https://m.media-amazon.com/images/I/61VG6w1Wk2L._AC_UF894,1000_QL80_.jpg"
+                  class="card-img-top"
+                  style="height: 450px; object-fit: cover"
+                  alt="Natural Woven Storage Basket Set" />
+              </div>
+
+              <div class="card-body">
+                <h6 class="card-title">Natural Woven Storage Basket Set</h6>
+                <p class="card-text">
+                  Eco-friendly woven baskets for stylish home organization.
+                </p>
+
+                <div class="product-price">
+                  $49.99
+                  <span class="old-price">$69.99</span>
+                </div>
+                <button class="add-to-cart w-100" type="button" data-id="25">
+                  <i class="fas fa-cart-plus me-1"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="product-card card">
+              <div class="img-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=700&auto=format&fit=crop"
+                  class="card-img-top"
+                  style="height: 450px; object-fit: cover"
+                  alt="Gallery Photo Frame Collection" />
+              </div>
+
+              <div class="card-body">
+                <h6 class="card-title">Gallery Photo Frame Collection</h6>
+                <p class="card-text">
+                  Elegant metallic frames for creating a stunning gallery wall.
+                </p>
+
+                <div class="product-price">
+                  $39.99
+                  <span class="old-price">$54.99</span>
+                </div>
+                <button class="add-to-cart w-100" type="button" data-id="26">
+                  <i class="fas fa-cart-plus me-1"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="product-card card">
+              <div class="img-wrapper">
+                <img
+                  src="https://m.media-amazon.com/images/I/613gxcbyFTL._AC_UF894,1000_QL80_.jpg"
+                  class="card-img-top"
+                  style="height: 450px; object-fit: cover"
+                  alt="Contemporary Wall Clock" />
+              </div>
+
+              <div class="card-body">
+                <h6 class="card-title">Contemporary Wall Clock</h6>
+                <p class="card-text">
+                  Silent quartz movement with a clean modern aesthetic.
+                </p>
+
+                <div class="product-price">
+                  $59.99
+                  <span class="old-price">$79.99</span>
+                </div>
+                <button class="add-to-cart w-100" type="button" data-id="27">
+                  <i class="fas fa-cart-plus me-1"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 spotlight-section" id="spotlight">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <h2 class="section-title section-title-center">Product Spotlight</h2>
+          <p class="section-subtitle mt-2">
+            This week's must-have pick, curated just for you.
+          </p>
+        </div>
+        <div class="row g-0 spotlight-card" id="spotlight-content">
+          <div class="col-md-6">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLs4GntGtY7YAW32toeNWpRRUt4UtPmtH3yyRPVTrit-vSI4ZvFrFzWJYZ&s=10"
+              alt="Premium Wireless Earbuds"
+              class="img-fluid w-100"
+              style="max-height: 420px"
+              loading="lazy" />
+          </div>
+          <div class="col-md-6 d-flex align-items-center">
+            <div class="spotlight-content">
+              <span class="spotlight-tag mb-3"
+                ><i class="fas fa-star me-1"></i>Editor's Choice</span
+              >
+              <h3>Premium Wireless Earbuds</h3>
+              <p>
+                Experience crystal-clear sound with our latest flagship earbuds.
+                Featuring adaptive noise cancellation, 40-hour battery life with
+                case, and a sleek ergonomic design. Perfect for music lovers and
+                professionals on the go.
+              </p>
+              <div class="spotlight-price mb-3">
+                $179.99
+                <span
+                  style="
+                    font-size: 1rem;
+                    font-weight: 400;
+                    color: var(--cub-text-light);
+                    text-decoration: line-through;
+                  "
+                  >$229.99</span
+                >
+              </div>
+              <button
+                class="add-to-cart"
+                type="button"
+                data-id="28">
+                Shop This Deal <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-cub-light" id="reviews">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <h2 class="section-title section-title-center">
+            What Our Customers Say
+          </h2>
+          <p class="section-subtitle mt-2">
+            Real reviews from real people who love CubMart.
+          </p>
+        </div>
+        <div class="row g-4" id="reviews-grid">
+          <div class="col-lg-3 col-md-6">
+            <div class="review-card">
+              <div class="review-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="review-text">
+                "Absolutely love my purchase! The quality exceeded my
+                expectations and shipping was incredibly fast. CubMart is now my
+                go-to shop for everything."
+              </p>
+              <div class="reviewer-info">
+                <img
+                  src="https://picsum.photos/80/80?random=50"
+                  alt="Sarah Mitchell"
+                  loading="lazy" />
+                <div>
+                  <h6 class="reviewer-name">Sarah Mitchell</h6>
+                  <p class="reviewer-title">Verified Buyer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="review-card">
+              <div class="review-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="review-text">
+                "Great selection and even better prices. I saved over $100 on
+                electronics compared to other stores. The customer service team
+                was super helpful too."
+              </p>
+              <div class="reviewer-info">
+                <img
+                  src="https://picsum.photos/80/80?random=51"
+                  alt="James Rodriguez"
+                  loading="lazy" />
+                <div>
+                  <h6 class="reviewer-name">James Rodriguez</h6>
+                  <p class="reviewer-title">Frequent Shopper</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="review-card">
+              <div class="review-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p class="review-text">
+                "The home collection is stunning! I ordered several items for a
+                client project and everything was perfect. Fast delivery and
+                beautiful packaging."
+              </p>
+              <div class="reviewer-info">
+                <img
+                  src="https://picsum.photos/80/80?random=52"
+                  alt="Emily Chen"
+                  loading="lazy" />
+                <div>
+                  <h6 class="reviewer-name">Emily Chen</h6>
+                  <p class="reviewer-title">Interior Designer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="review-card">
+              <div class="review-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="review-text">
+                "First time shopping here and I am impressed. The user
+                experience on the website is smooth and my order arrived in just
+                2 days. Will definitely return."
+              </p>
+              <div class="reviewer-info">
+                <img
+                  src="https://picsum.photos/80/80?random=53"
+                  alt="Michael Okafor"
+                  loading="lazy" />
+                <div>
+                  <h6 class="reviewer-name">Michael Okafor</h6>
+                  <p class="reviewer-title">Verified Buyer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 contact-section" id="contact">
+      <div class="container py-4">
+        <div class="row g-4">
+          <div class="col-lg-7">
+            <div class="contact-form-wrapper">
+              <h3 class="mb-2">Get in Touch</h3>
+              <p
+                class="text-white-50 mb-4"
+                style="color: rgba(255, 255, 255, 0.7) !important">
+                Have a question? We'd love to hear from you.
+              </p>
+              <form id="contactForm" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="contactName" class="form-label">
+                      Your Name
+                    </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="contactName"
+                      placeholder="John Doe"
+                      required />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="contactEmail" class="form-label">
+                      Email Address
+                    </label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="contactEmail"
+                      placeholder="john@example.com"
+                      required />
+                  </div>
+                  <div class="col-12">
+                    <label for="contactSubject" class="form-label">
+                      Subject
+                    </label>
+                    <select class="form-control" id="contactSubject">
+                      <option value="" disabled selected>Select a topic</option>
+                      <option value="order">Order Inquiry</option>
+                      <option value="product">Product Question</option>
+                      <option value="return">Returns & Exchanges</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <label for="contactMessage" class="form-label">
+                      Message
+                    </label>
+                    <textarea
+                      class="form-control"
+                      id="contactMessage"
+                      rows="4"
+                      placeholder="How can we help you?"
+                      required></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-submit">
+                      Send Message <i class="fas fa-paper-plane ms-2"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div
+              class="newsletter-box d-flex flex-column justify-content-center">
+              <h4>
+                <i class="fas fa-envelope-open-text me-2"></i> Stay in the Loop
+              </h4>
+              <p>
+                Subscribe to our newsletter and be the first to know about
+                exclusive deals, new arrivals, and special offers.
+              </p>
+              <form id="newsletterForm">
+                <div class="input-group mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Your email address"
+                    required
+                    aria-label="Email for newsletter" /><button
+                    class="btn btn-subscribe"
+                    type="submit">
+                    Subscribe
+                  </button>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="newsletterConsent"
+                    checked />
+                  <label
+                    class="form-check-label"
+                    style="color: rgba(255, 255, 255, 0.7); font-size: 0.85rem"
+                    for="newsletterConsent">
+                    I agree to receive marketing emails and accept the privacy
+                    policy.
+                  </label>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-cub py-5" id="footer">
+      <div class="container">
+        <div class="row g-4 mb-4" id="footer-columns">
+          <div class="col-lg-3 col-md-6">
+            <h5>Shop</h5>
+            <ul class="list-unstyled">
+              <li><a href="#cat-electronics">Electronics</a></li>
+              <li><a href="#cat-fashion">Fashion</a></li>
+              <li><a href="#cat-home">Home & Living</a></li>
+              <li><a href="#featured-products">Sale Items</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5>Help</h5>
+            <ul class="list-unstyled">
+              <li><a href="#contact">Contact Us</a></li>
+              <li><a href="#contact">FAQs</a></li>
+              <li><a href="#contact">Shipping Info</a></li>
+              <li><a href="#contact">Returns Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5>Company</h5>
+            <ul class="list-unstyled">
+              <li><a href="#hero">About Us</a></li>
+              <li><a href="#hero">Careers</a></li>
+              <li><a href="#hero">Blog</a></li>
+              <li><a href="#hero">Press Kit</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5>Connect</h5>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+            <p
+              class="mt-3"
+              style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.5)">
+              Follow us for the latest deals and inspiration.
+            </p>
+          </div>
+        </div>
+        <div
+          class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
+          <span>&copy; 2025 CubMart. All rights reserved.</span>
+          <div class="mt-2 mt-md-0">
+            <a href="#" class="mx-2">Privacy Policy</a>
+            <a href="#" class="mx-2">Terms of Service</a>
+            <a href="#" class="mx-2">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="cart-overlay"></div>
+
+    <button id="cartButton" class="cart-fab btn shadow-lg">
+      <i class="fas fa-shopping-cart"></i>
+
+      <span class="cart-count badge rounded-pill bg-danger"> 0 </span>
+    </button>
+
+    <aside id="shoppingCart" class="shopping-cart d-flex flex-column">
+      <div class="cart-header">
+        <div>
+          <h4 class="fw-bold mb-0">
+            <i class="fas fa-shopping-cart me-2"></i>
+            Shopping Cart
+          </h4>
+
+          <small class="text-muted">
+            <span id="cartItemsCount"> 0 </span>
+            Items
+          </small>
+        </div>
+
+        <button class="btn btn-light rounded-circle" id="closeCart">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div id="cartBody" class="cart-body flex-grow-1">
+        <div id="emptyCart" class="empty-cart text-center py-5">
+          <i class="fas fa-shopping-cart fa-4x text-secondary mb-4"> </i>
+
+          <h5 class="fw-bold">Your cart is empty</h5>
+
+          <p class="text-muted">
+            Start shopping and your favorite products will appear here.
+          </p>
+        </div>
+
+        <div id="cartItems"></div>
+      </div>
+
+      <div class="cart-footer">
+        <div class="mb-4">
+          <label class="form-label fw-semibold"> Promo Code </label>
+
+          <div class="input-group">
+            <input
+            type="text"
+            class="form-control"
+            id="promoCode"
+            placeholder="Enter code" />
+            
+            <button class="btn btn-success" id="applyPromo">Apply</button>
+          </div>
+          
+          <div class="d-flex gap-3 mt-2">
+            <span class="promocodes">SAVE20</span>
+            <span class="promocodes">SAVE10</span>
+            <span class="promocodes">WELCOME</span>
+          </div>
+        </div>
+
+        <div class="cart-summary">
+          <div class="d-flex justify-content-between mb-2">
+            <span> Subtotal </span>
+
+            <span id="subtotalAmount"> $0.00 </span>
+          </div>
+
+          <div class="d-flex justify-content-between mb-2">
+            <span> Discount </span>
+
+            <span id="savedAmount" class="text-success"> - $0.00 </span>
+          </div>
+
+          <div class="d-flex justify-content-between mb-2">
+            <span> Promo Code </span>
+
+            <span id="promoAmount" class="text-success"> - $0.00 </span>
+          </div>
+          
+          <div class="d-flex justify-content-between mb-2">
+            <span> Discount Rate </span>
+
+            <span id="discountAmount" class="text-success"> -0% </span>
+          </div>
+
+          <div class="d-flex justify-content-between mb-2">
+            <span> Tax </span>
+
+            <span id="taxAmount" class="text-success"> - $0.00 </span>
+          </div>
+
+          <hr />
+
+          <div class="d-flex justify-content-between">
+            <h5 class="fw-bold">Total</h5>
+
+            <h5 id="totalAmount" class="fw-bold text-success">$0.00</h5>
+          </div>
+        </div>
+
+        <button class="btn btn-success btn-lg w-100 mt-4" id="checkoutButton">
+          <i class="fas fa-shopping-cart"></i>
+
+          Checkout
+        </button>
+      </div>
+    </aside>
+
+    <div class="modal fade" id="receiptModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-success text-white">
+            <h5 class="modal-title">
+              <i class="fa-solid fa-receipt me-2"></i>
+              Order Receipt
+            </h5>
+
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"></button>
+          </div>
+
+          <div class="modal-body">
+            <div id="receiptContent"></div>
+          </div>
+
+          <div class="modal-footer">
+            <button class="btn btn-outline-secondary" data-bs-dismiss="modal">
+              Continue Shopping
+            </button>
+
+            <button id="confirmOrder" class="btn btn-success">
+              Confirm Order
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
