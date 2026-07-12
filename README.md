@@ -112,7 +112,7 @@ This project was developed for educational purposes as part of a web development
 
 ## 👨‍💻 Author
 
-**Developer:** *Your Name Here*
+**Developer:** *Abdullah Sameh Abdo Mohamed*
 
 **Course:** Web Development
 
